@@ -16,7 +16,7 @@ const sts = new SellToState({ apiKey: process.env.STS_API_KEY });
 const me = await sts.whoami();
 ```
 
-Depend on it with `github:getbeton/selltostate-ts`. Do not run `npm install selltostate` from the registry. That package is not published.
+Install it with `npm install selltostate`. The package ships compiled JavaScript and type declarations (`dist/`). A dependency on `github:getbeton/selltostate-ts` also works: npm builds `dist/` in the `prepare` script.
 
 ## Also
 
@@ -38,4 +38,4 @@ Depend on it with `github:getbeton/selltostate-ts`. Do not run `npm install sell
 - https://github.com/getbeton/selltostate-node
 - https://github.com/getbeton/selltostate-next
 
-This package is not published to npm, PyPI, Maven Central, crates.io, RubyGems, or Homebrew.
+npm: [`selltostate`](https://www.npmjs.com/package/selltostate) and [`selltostate-mcp`](https://www.npmjs.com/package/selltostate-mcp). The other clients in the list are not published to a package registry.

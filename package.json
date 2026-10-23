@@ -1,13 +1,32 @@
 {
   "name": "selltostate",
   "version": "0.1.0",
-  "private": true,
+  "description": "Sell to State API client (TypeScript). Search government tenders, contract awards, buyers and suppliers in 60+ countries. https://www.selltostate.com",
+  "license": "MIT",
+  "homepage": "https://www.selltostate.com/api/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getbeton/selltostate-ts.git"
+  },
+  "keywords": ["government-contracts", "tenders", "public-procurement", "api-client", "selltostate"],
   "type": "module",
-  "description": "Sell to State API client (TypeScript). Search government awards. https://selltostate.com",
-  "exports": "./client.ts",
-  "files": [
-    "client.ts",
-    "README.md",
-    "LICENSE"
-  ]
+  "exports": {
+    ".": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    }
+  },
+  "types": "./dist/client.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "tsc",
+    "test": "node --test \"*.test.mjs\""
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": { "access": "public" }
 }
