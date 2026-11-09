@@ -1,7 +1,7 @@
 {
   "name": "selltostate",
   "version": "0.1.0",
-  "description": "Sell to State API client (TypeScript). Search government tenders, contract awards, buyers and suppliers in 60+ countries. https://www.selltostate.com",
+  "description": "Sell to State API client (TypeScript). Search government tenders, contract awards, buyers and suppliers in 70+ countries. https://www.selltostate.com",
   "license": "MIT",
   "homepage": "https://www.selltostate.com/api/",
   "repository": {
